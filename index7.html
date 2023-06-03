@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sección de Contacto</title>
+  <!-- Agrega los enlaces a los archivos CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 my-5">
+        <h2>Información de Contacto</h2>
+        <p>Párrafo de descripción</p>
+        <ul class="list-unstyled">
+          <li>Teléfono: 123-456-7890</li>
+          <li>Correo: correo@example.com</li>
+          <li>Dirección: Dirección postal</li>
+        </ul>
+      </div>
+      <div class="col-lg-6 my-5">
+        <h2>Formulario de Contacto</h2>
+        <form class="needs-validation" novalidate>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" required>
+            <div class="invalid-feedback">Por favor, ingrese su nombre.</div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Ingrese su email" required>
+            <div class="invalid-feedback">Por favor, ingrese un email válido.</div>
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="4" placeholder="Escriba su mensaje" required></textarea>
+            <div class="invalid-feedback">Por favor, ingrese su mensaje.</div>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Agrega los enlaces a los archivos JavaScript de Bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Habilitar la validación del formulario
+    (function () {
+      'use strict';
+      var forms = document.querySelectorAll('.needs-validation');
+      Array.prototype.slice.call(forms).forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    })();
+  </script>
+</body>
+</html>

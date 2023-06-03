@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sección con Carrusel Bootstrap</title>
+  <!-- Agrega los enlaces a los archivos CSS de Bootstrap y Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/bootstrap-icons.min.css">
+</head>
+<body>
+  <div class="container">
+    <header class="text-center my-5">
+      <h2>Título de la Sección</h2>
+      <p>Párrafo de introducción</p>
+    </header>
+    <div class="row">
+      <div class="col-xs-12 col-md-12 col-lg-8 offset-lg-2">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExample" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExample" data-bs-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <figure>
+                <blockquote class="blockquote">
+                  <p>Testimonial 1</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">Autor 1</figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure>
+                <blockquote class="blockquote">
+                  <p>Testimonial 2</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">Autor 2</figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure>
+                <blockquote class="blockquote">
+                  <p>Testimonial 3</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">Autor 3</figcaption>
+              </figure>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Agrega los enlaces a los archivos JavaScript de Bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
